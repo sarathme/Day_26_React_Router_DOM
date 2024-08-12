@@ -2,6 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import NavBar from "./NavBar";
 import CourseList from "./CourseList";
 
+// Structuring Course Data.
 const courses = [
   {
     id: 1254,

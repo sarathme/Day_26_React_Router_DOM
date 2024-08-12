@@ -4,6 +4,8 @@ import CourseCard from "./CourseCard";
 function CourseList({ courses }) {
   const url = useHref();
   console.log(url.slice(1));
+
+  // Filtering courses using useHref Hook from react-router-dom
   const filteredCourse =
     url.slice(1) === "all"
       ? courses
