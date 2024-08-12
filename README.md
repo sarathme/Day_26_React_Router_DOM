@@ -45,7 +45,7 @@ Route component provided by the React Router is the important part of React
 Router app. They couple URl segments to components or elements using **_path_**
 and **_element_** attributes.
 
-The element attribute accepts both HTML elements and React component Elements
+The element attribute accepts both HTML elements and React component Elements.
 
 ```jsx
 // App.jsx

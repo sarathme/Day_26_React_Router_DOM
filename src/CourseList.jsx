@@ -1,7 +1,7 @@
 import { useHref } from "react-router-dom";
 import CourseCard from "./CourseCard";
 
-function ProductList({ courses }) {
+function CourseList({ courses }) {
   const url = useHref();
   console.log(url.slice(1));
   const filteredCourse =
@@ -13,7 +13,7 @@ function ProductList({ courses }) {
 
   return (
     <div className="grid-content">
-      <h1>Product {url}</h1>
+      <h1>Course{url}</h1>
       <div className="course-list">
         {filteredCourse.map((course) => (
           <CourseCard key={course.id} course={course} />
@@ -23,4 +23,4 @@ function ProductList({ courses }) {
   );
 }
 
-export default ProductList;
+export default CourseList;
