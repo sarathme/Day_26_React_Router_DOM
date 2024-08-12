@@ -1,6 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import NavBar from "./NavBar";
-import ProductList from "./ProductList";
+import CourseList from "./CourseList";
 
 const courses = [
   {
@@ -89,14 +89,14 @@ function App() {
       <NavBar />
       <Routes>
         <Route index element={<Navigate to="all" />} />
-        <Route path="all" element={<ProductList courses={courses} />} />
-        <Route path="full-stack" element={<ProductList courses={courses} />} />
+        <Route path="all" element={<CourseList courses={courses} />} />
+        <Route path="full-stack" element={<CourseList courses={courses} />} />
         <Route
           path="cyber-security"
-          element={<ProductList courses={courses} />}
+          element={<CourseList courses={courses} />}
         />
-        <Route path="career" element={<ProductList courses={courses} />} />
-        <Route path="datascience" element={<ProductList courses={courses} />} />
+        <Route path="career" element={<CourseList courses={courses} />} />
+        <Route path="datascience" element={<CourseList courses={courses} />} />
       </Routes>
     </BrowserRouter>
   );
